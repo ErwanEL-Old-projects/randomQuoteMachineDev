@@ -19,6 +19,7 @@ function getCitacion () {
     persona.innerHTML = name;
     citacion.innerHTML = content;
 }
+
 let request = function () {
     let xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
