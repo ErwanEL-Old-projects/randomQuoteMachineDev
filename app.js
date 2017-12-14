@@ -14,11 +14,11 @@ function getCitacion () {
     object = data[index];
     name = `- <cite>${object.title}</cite>`;
     content = object.content;
-    content = content.substr(3, (content.length - 10));
+    content = content.substr(3, (content.length - 8));
     content = `"${content}"`;
     persona.innerHTML = name;
     citacion.innerHTML = content;
-}
+};
 
 let request = function () {
     let xhr = new XMLHttpRequest();
